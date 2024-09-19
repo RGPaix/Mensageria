@@ -40,7 +40,7 @@ public class Cliente {
 
         // Criar a interface gráfica
         JFrame frame = new JFrame("Sistema de Compras");
-        frame.setSize(400, 200);
+        frame.setSize(400, 400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JLabel label = new JLabel("Digite o nome do produto:");
@@ -52,7 +52,7 @@ public class Cliente {
         panel.add(label);
         panel.add(textField);
         panel.add(comprarButton);
-        panel.add(new JScrollPane(statusArea));
+        panel.add(statusArea);
 
         frame.add(panel);
         frame.setVisible(true);
